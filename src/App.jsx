@@ -15,7 +15,9 @@ function App() {
   const [Color, SetColor] = useState(colorRandom)
 
   const changeQuotes = () => {
+    const quotesRandom = Math.floor(Math.random() * quotes.length)
     SetCard(quotesRandom)
+    const colorRandom = colorData[Math.floor(Math.random() * colorData.length)]
     SetColor(colorRandom)
   }
 
